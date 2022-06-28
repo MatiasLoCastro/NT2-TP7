@@ -109,31 +109,6 @@
           Agregar Usuario Async
         </button>
       </vue-form>
-      <!-- <div v-if="users.length" class="table-responsive">
-        <table class="table table-dark">
-          <tr>
-            <th>Nombre</th>
-            <th>Edad</th>
-            <th>Email</th>
-          </tr>
-          <tr v-for="(user, index) in users" :key="index">
-            <td>{{ user.nombre }}</td>
-            <td>{{ user.edad }}</td>
-            <td>{{ user.email }}</td>
-          </tr>
-        </table>
-      </div>
-      <h4 v-else class="alert alert-danger text-center">
-        No se encontraron usuarios.
-      </h4> -->
-
-      <!-- <hr />
-      <p><u>formData</u></p>
-      <pre>{{ formData }}</pre>
-
-      <hr />
-      <p><u>formState</u></p>
-      <pre>{{ formState }}</pre> -->
     </div>
   </section>
 </template>
@@ -154,7 +129,6 @@ export default {
       nombreMaxLength: 15,
       edadMin: 18,
       edadMax: 120,
-      users: [],
     };
   },
   methods: {
